@@ -29,7 +29,7 @@ public class AccountController implements BankApi {
     }
 
     @Override
-    public ResponseEntity<String> depositAmount(String accountNumber, @RequestParam Double amount) {
+    public ResponseEntity<String> depositAmount(String accountNumber,  Double amount) {
         return accountService.depositAmount(accountNumber,amount);
     }
 
